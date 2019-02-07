@@ -9,6 +9,9 @@ const condaSchema = Joi.object({
   conda_platforms: Joi.array()
     .items(Joi.string())
     .required(),
+  versions: Joi.array()
+    .items(Joi.string())
+    .required(),
   files: Joi.array()
     .items(
       Joi.object({
